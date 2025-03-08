@@ -13,4 +13,8 @@ test('single number returns itself', () => {
 test('two comma-separated numbers return sum', () => {
     expect(add("1,5")).toBe(6);
   });
+
+  test('any amount of numbers', () => {
+    expect(add("1,2,3,4")).toBe(10);
+  });
   

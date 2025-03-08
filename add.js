@@ -1,6 +1,8 @@
 function add(numbers) {
-    return numbers ? parseInt(numbers) || 0 : 0;
+    if (!numbers) return 0;
+    return numbers.split(',').reduce((acc, num) => acc + parseInt(num), 0);
   }
   
   module.exports = add;
+  
   

@@ -9,3 +9,8 @@ test('single number returns itself', () => {
     expect(add("5")).toBe(5);
   });
   
+
+test('two comma-separated numbers return sum', () => {
+    expect(add("1,5")).toBe(6);
+  });
+  

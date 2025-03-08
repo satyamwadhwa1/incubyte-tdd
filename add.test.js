@@ -21,4 +21,9 @@ test('two comma-separated numbers return sum', () => {
 test('handle newline delimiter', () => {
     expect(add("1\n2,3")).toBe(6);
   });
+
+  test('custom delimiter', () => {
+    expect(add("//;\n1;2")).toBe(3);
+  });
+  
   

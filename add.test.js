@@ -17,4 +17,8 @@ test('two comma-separated numbers return sum', () => {
   test('any amount of numbers', () => {
     expect(add("1,2,3,4")).toBe(10);
   });
+
+test('handle newline delimiter', () => {
+    expect(add("1\n2,3")).toBe(6);
+  });
   

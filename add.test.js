@@ -26,4 +26,8 @@ test('handle newline delimiter', () => {
     expect(add("//;\n1;2")).toBe(3);
   });
   
+  test('throw error for negatives', () => {
+    expect(() => add("1,-2")).toThrow("negative numbers not allowed: -2");
+  });
+  
   

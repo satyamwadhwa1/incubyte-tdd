@@ -29,5 +29,9 @@ test('handle newline delimiter', () => {
   test('throw error for negatives', () => {
     expect(() => add("1,-2")).toThrow("negative numbers not allowed: -2");
   });
+
+  test('multiple negatives in error message', () => {
+    expect(() => add("1,-2,3,-5")).toThrow("negative numbers not allowed: -2,-5");
+  });
   
   
